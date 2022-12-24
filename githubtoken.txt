@@ -1,1 +1,11 @@
 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
+
+
+
+echo "# velu_ansible" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sveludeeksha/velu_ansible.git
+git push -u origin main
