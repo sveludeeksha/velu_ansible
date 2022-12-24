@@ -4,7 +4,7 @@
   tasks:
    - name: install java on ububtu
      apt: 
-      name: "{{myjavainstall}}"
+      name: "{{'myjavainstall'}}"
       state: present
      when: ansible_os_family=="Debian"
 
