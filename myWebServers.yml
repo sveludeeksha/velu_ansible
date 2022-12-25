@@ -1,3 +1,12 @@
 ---
-- key: value
-  myjavainstall: openjdk-8-jre
+- hosts: myWebServers
+  become: yes 
+  gather_facts: yes
+  tasks:
+  - name: install appache in node 1
+    apt:
+     name: "{{mywebapache}}"
+
+
+#- key: value
+  #myjavainstall: openjdk-8-jre
