@@ -6,7 +6,9 @@
   - name: install appache in node 1
     apt:
      name: "{{mywebpackage}}"
-
+  - name: install appache on redhat
+    yum:
+     name: "{{mywebredhat}}"
 
 #- key: value
   #myjavainstall: openjdk-8-jre
