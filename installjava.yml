@@ -2,10 +2,16 @@
 - hosts: myWebServers
   become: yes
   tasks:
-   - name: install java on ububtu
-     apt: 
-      name: "{{'myjavainstall'}}"
+  - name: install java on ububtu node1
+    apt: 
+      name: "{{myjavaubuntu}}"
       state: present
-     when: ansible_os_family=="Debian"
+    when: ansible_os_family=="Debian"
+
+  - name: install java on redhat
+    yum:
+     name: "{{myjavaredhat}}"
+     state: present
+    when: ansible_os_family=="redhat"
 
 
