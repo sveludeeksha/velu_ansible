@@ -1,5 +1,6 @@
 [myWebServers]
 172.31.33.240
+172.31.39.154
 
 [myWebServers:vars]
 mywebpackage= apache2
