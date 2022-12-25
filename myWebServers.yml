@@ -5,7 +5,7 @@
   tasks:
   - name: install appache in node 1
     apt:
-     name: "{{mywebapache}}"
+     name: "{{mywebpackage}}"
 
 
 #- key: value
