@@ -4,13 +4,13 @@
   tasks:
   - name: install java on ububtu node1
     apt: 
-      name: "{{mywebpackage}}"
+      name: "{{myjavaubuntu}}"
       state: present
     when: ansible_os_family=="Debian"
 
   - name: install java on redhat
     yum:
-     name: "{{mywebredhat}}"
+     name: "{{myjavaredhat}}"
      state: present
     when: ansible_os_family=="redhat"
 
